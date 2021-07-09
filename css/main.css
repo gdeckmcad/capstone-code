@@ -7,6 +7,7 @@
 :root {
   --color-purple-500: 111, 75, 213;
   --color-teal-100: 240, 249, 252;
+  --color-gray-100: 230, 230, 230;
   --color-white: 255, 255, 255;
   --spacing-half: .5rem;
   --spacing-one: 1rem;
@@ -67,6 +68,7 @@ body {
   width: 35vw;
   margin: 0 auto;
   padding-top: var(--spacing-three);
+  padding-bottom: var(--spacing-four);
 }
 
 .welcome img {
@@ -98,6 +100,22 @@ h2 {
   font-family: 'Bellota Text', cursive;
   font-weight: 400;
 
+}
+
+/* homepage cards */
+
+.card {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: rgba(var(--color-white));
+  border: 1px solid rgba(var(--color-gray-100));
+  border-radius: 4px;
+  box-shadow: 1px 4px 8px rgba(var(--color-gray-100));
+  padding: 16px;
+}
+
+.card img {
+  width: 117px;
 }
 
 /* Responsive behavior */
