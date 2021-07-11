@@ -56,6 +56,17 @@ body {
   margin-top: 1px;
 }
 
+.inline-images {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: var(--spacing-two);
+}
+
+.inline-images img {
+  padding-top: var(--spacing-one);
+  padding-bottom: var(--spacing-one);
+}
+
 
 /* Top navigation */
 
