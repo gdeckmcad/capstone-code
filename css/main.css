@@ -10,6 +10,7 @@
   --color-green-100: 215, 246, 230;
   --color-green-500: 42, 133, 86;
   --color-teal-100: 240, 249, 252;
+  --color-blue-500: 17, 30, 221;
   --color-red-500: 217, 53, 29;
   --color-orange-100: 251, 240, 233;
   --color-orange-500: 215, 104, 25;
@@ -176,6 +177,7 @@ h3 {
 
 h4 {
   font-size: 1.125rem;
+  line-height: 1.4;
   font-family:'Roboto', sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -239,6 +241,14 @@ a {
   text-decoration: none;
 }
 
+.resource {
+  color: rgba(var(--color-blue-500));
+}
+
+.resource:hover {
+  border-bottom: 1px solid rgba(var(--color-blue-500));
+}
+
 /* homepage cards */
 
 .card {
@@ -297,6 +307,13 @@ a {
 }
 
 /* Alerts */
+
+.blank {
+  display: grid;
+  vertical-align: middle;
+  grid-template-columns: 10% 90%;
+  margin-top: var(--spacing-two);
+}
 
 .warning {
   display: grid;
