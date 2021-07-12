@@ -364,9 +364,9 @@ a {
   margin-bottom: var(--spacing-one);
 }
 
-/* college card */
+/* button card */
 
-.college-card {
+.button-card {
   display: grid;
   grid-template-columns: 45% 45%;
   grid-column-gap: var(--spacing-two);
