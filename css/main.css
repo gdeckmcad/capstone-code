@@ -52,7 +52,6 @@ body {
   outline: 2px dotted rgba(var(--color-purple-500));
 }
 
-
 .button svg {
   vertical-align: middle;
   margin-bottom: 4px;
@@ -242,6 +241,27 @@ h6 {
   margin: 0px;
 }
 
+.small-purple-header {
+  font-size: 0.87rem;
+  line-height: 1.4;
+  font-family:'Roboto', sans-serif;
+  font-weight: 500;
+  color: rgba(var(--color-purple-500));
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 4px;
+}
+
+.small-purple-text {
+  font-size: 0.87rem;
+  line-height: 1.4;
+  font-family:'Roboto', sans-serif;
+  font-weight: 300;
+  color: rgba(var(--color-purple-500));
+  margin: 0px;
+  padding: 0px;
+}
+
 a {
   text-decoration: none;
 }
@@ -293,6 +313,10 @@ a {
   padding-right: var(--spacing-four);
 }
 
+.scenario img {
+  padding-bottom: var(--spacing-two);
+}
+
 .actions {
   padding-top: var(--spacing-three);
 }
@@ -307,7 +331,7 @@ a {
 }
 
 .sidebar img {
-  padding-top: var(--spacing-four);
+  padding-top: var(--spacing-one);
   padding-bottom: var(--spacing-one);
 }
 
@@ -338,6 +362,25 @@ a {
   border: 1px solid rgba(var(--color-green-500));
   padding: var(--spacing-half);
   margin-bottom: var(--spacing-one);
+}
+
+/* college card */
+
+.college-card {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-column-gap: var(--spacing-two);
+}
+
+.column {
+  color: rgba(var(--color-purple-500));
+  border: 2px solid rgba(var(--color-purple-500));
+  border-radius: 4px;
+  padding: var(--spacing-one);
+}
+
+.column:hover {
+  background-color: rgba(var(--color-purple-100));
 }
 
 /* Responsive behavior */
