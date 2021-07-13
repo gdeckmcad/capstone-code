@@ -69,6 +69,11 @@ body {
   padding-bottom: var(--spacing-one);
 }
 
+ol li {
+  padding-bottom: var(--spacing-half);
+  padding-top: var(--spacing-half);
+}
+
 
 /* Top navigation */
 
