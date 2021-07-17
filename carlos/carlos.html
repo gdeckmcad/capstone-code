@@ -71,10 +71,38 @@
                             <path d="M1,22 L23,22 L12,3 L1,22 Z M13,19 L11,19 L11,17 L13,17 L13,19 Z M13,15 L11,15 L11,11 L13,11 L13,15 Z" id="Shape" fill="#D76823" fill-rule="nonzero"></path>
                         </g>
                         </svg>
-                      <p class="h4">Carlos will be charged a 1.95% fee1 ($97.50)</p>
+                      <p class="h4">Carlos will be charged a 1.95% fee<sup>1</sup>($97.50)</p>
+                      <!-- Accordion -->
+                        <button onclick="myFunction('Demo1')" class="warning">
+                            <div class="small">If cash-checking services charge a fee, why would anyone do this instead of opening a bank account?</div>
+                            <div><?xml version="1.0" encoding="UTF-8"?>
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Icon-/-Expand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                        <path d="M13,7 L11,7 L11,11 L7,11 L7,13 L11,13 L11,17 L13,17 L13,13 L17,13 L17,11 L13,11 L13,7 Z M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M12,20 C7.59,20 4,16.41 4,12 C4,7.59 7.59,4 12,4 C16.41,4 20,7.59 20,12 C20,16.41 16.41,20 12,20 Z" id="Shape" fill="#D76823" fill-rule="nonzero"></path>
+                                    </g>
+                                </svg></div>
+                        
+                        </button>
+                            
+                            <div id="Demo1" class="w3-container w3-hide accordion-body">
+                            <p class="small">Six percent of adults in the U.S. are “unbanked,” meaning they don't have a checking, savings, or money market account. Not having a bank account can occur for many reasons, including having negative items in your ChexSystems report, not wanting to pay the fees that come with a traditional bank account, or facing local bank branch closures. But it often necessitates using alternative financial services to complete basic transactions like cashing checks<sup><a href=“https://www.thebalance.com/what-is-a-check-cashing-service-4796398” target="_blank">4</a></sup>.</p>
+                            </div>
+                            
+                            <script>
+                            function myFunction(id) {
+                            var x = document.getElementById(id);
+                            if (x.className.indexOf("w3-show") == -1) {
+                                x.className += " w3-show";
+                            } else {
+                                x.className = x.className.replace(" w3-show", "");
+                            }
+                            }
+                            </script>
+                        <!-- Accordion -->
                       <div class="actions">
                         <a class="button" href="carlos.html">Go back</a>
-                        <a class="button" href="carlos_1.2.html">Keep going</a>
+                        <a class="primary-button" href="carlos_1.2.html">Keep going</a>
                     </div>
                   </div>
                 </div>
