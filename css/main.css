@@ -74,6 +74,12 @@ ol li {
   padding-top: var(--spacing-half);
 }
 
+.welcome ul li {
+  padding-bottom: var(--spacing-half);
+  padding-top: var(--spacing-half);
+  list-style-type: none;
+}
+
 
 /* Top navigation */
 
