@@ -7,6 +7,7 @@
     <!--Stylesheets-->
     <link rel="stylesheet" href="../css/main.css">
     <link type="text/css" rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
     <title>It's Accrual World</title>
 </head>
@@ -48,8 +49,10 @@
                     </svg></span>
                     Open a bank account</a>
             </div>
-            <div class="actions">
-                <a class="button" href="carlos_1.2.html">
+
+            <!-- Modal trigger-->
+            <div>
+                <button onclick="document.getElementById('id01').style.display='block'" class="button" style="padding-top: 4px; padding-bottom:2px;">
                     <span>
                         <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Icon-/-Cash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -58,9 +61,27 @@
                             </g>
                         </svg>
                     </span>
-                    
-                    Use check-cashing services</a>
-            </div>
+                Use check-cashing services</button>
+              <!-- Modal -->
+                <div id="id01" class="modal">
+                  <div class="modal-content">
+                        <svg width="56px" height="56px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Icon-/-Warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M1,22 L23,22 L12,3 L1,22 Z M13,19 L11,19 L11,17 L13,17 L13,19 Z M13,15 L11,15 L11,11 L13,11 L13,15 Z" id="Shape" fill="#D76823" fill-rule="nonzero"></path>
+                        </g>
+                        </svg>
+                      <p class="h4">Carlos will be charged a 1.95% fee1 ($97.50)</p>
+                      <div class="actions">
+                        <a class="button" href="carlos.html">Go back</a>
+                        <a class="button" href="carlos_1.2.html">Keep going</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            
         </section>
 
         <!-- Sidebar -->
