@@ -190,7 +190,7 @@ section, .modal {
   margin-right: auto;
 }
 
-.welcome ul li {
+.references ul li {
   padding-bottom: var(--spacing-half);
   padding-top: var(--spacing-half);
   list-style-type: none;
