@@ -358,7 +358,7 @@ a {
 }
 
 .card .col-2 {
-  padding: 16px;
+  padding: var(--spacing-two);
 }
 
 .card .col-1 img {
