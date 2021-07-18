@@ -145,6 +145,10 @@ ol li {
   outline: 2px dotted rgba(var(--color-white));
 }
 
+.main-nav img {
+  width: 375px;
+}
+
 /* page transitions */
 @keyframes transitionIn {
   from {
@@ -213,10 +217,10 @@ h4, .h4 {
   margin: 0px;
 }
 
-h5 {
-  font-size: 1rem;
+h5, .h5 {
+  font-size: 1.125rem;
   font-family:'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: rgba(var(--color-purple-500));
   margin: 0px;
 }
@@ -491,10 +495,6 @@ a {
     grid-template-columns: 65% 35%;
     width: 80vw;
     margin: 0 auto;
-  }
-
-  .main-nav img {
-    width: 375px;
   }
 
 
