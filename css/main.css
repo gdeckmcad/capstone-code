@@ -151,6 +151,11 @@ ol li {
   padding-top: 8px;
 }
 
+.main-nav object {
+  width: 375px;
+  padding-top: 8px;
+}
+
 /* page transitions */
 @keyframes transitionIn {
   from {
