@@ -146,7 +146,7 @@ ol li {
   outline: 2px dotted rgba(var(--color-white));
 }
 
-.main-nav img {
+.main-nav object {
   width: 375px;
   padding-top: 8px;
 }
