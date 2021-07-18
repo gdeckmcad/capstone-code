@@ -166,8 +166,18 @@ section, .modal {
 
 /* homepage and references layout */
 
-.welcome {
+.references {
   width: 35vw;
+  margin: 0 auto;
+  padding-top: var(--spacing-three);
+  padding-bottom: var(--spacing-four);
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: var(--spacing-four);
+  width: 60vw;
   margin: 0 auto;
   padding-top: var(--spacing-three);
   padding-bottom: var(--spacing-four);
@@ -189,7 +199,7 @@ section, .modal {
 /* Typography */
 
 h1, .h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Bellota Text', cursive;
   font-variant-ligatures: no-common-ligatures;
   font-weight: 700;
@@ -480,8 +490,10 @@ a {
 
 @media only screen and (max-width: 1024px) {
   .welcome {
-    width: 50vw;
+    width: 60vw;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
   }
 
   .card {
@@ -504,16 +516,11 @@ a {
     padding-bottom: var(--spacing-two);
   }
 
-
 }
 
 @media only screen and (max-width: 640px) {
   .main-nav {
     display: inline-block;
-  }
-
-  .main-nav img {
-    width: 75%;
   }
 
   .main-nav ul {
@@ -523,6 +530,8 @@ a {
   .welcome {
     width: 75vw;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
   }
 
   .card {
