@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--Stylesheets-->
-    <link rel="stylesheet" href="../css/main.css">
-    <link type="text/css" rel="stylesheet" href="../css/normalize.css" />
-    
-    <title>It's Accrual World</title>
-</head>
-
-<body>
+ 
+     <!--Stylesheets-->
+     <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="../css/main.css">
+     
+     <title>It's Accrual World</title>
+ </head>
+ 
+ <body>
+     <!--top navigation on every page-->
     <!--top navigation on every page-->
     <header class="page-header">
         <nav class="main-nav">
             <div class="nav-container-one">
-                <a href="../index.html"><img src="../assets/logo.png" alt="It's Accrual World logo with small icon of a city"></a>
+                <object data="../assets/Logo.svg" type="image/svg+xml"></object>
             </div>
 
             <div class="nav-container-two">
                 <ul>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="https://www.its-accrual-world.com/" target="_blank">About</a></li>
                     <li><a href="../references.html">References</a></li>
                 </ul>
@@ -31,37 +38,8 @@
     <div class="character-screens">
 
         <section class="scenario">
-            <div class="success">
-                <div>
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Icon-/-Success" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
-                            <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z" id="Shape" fill="#3A835D" fill-rule="nonzero"></path>
-                        </g>
-                    </svg>
-                </div>
-                <div style="padding-top:4px;">
-                    <span class="small">Marcus and Bill are paid!</span>
-                </div>
-            </div>
-
-            <div class="warning">
-                <div>
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Icon-/-Warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
-                        <path d="M1,22 L23,22 L12,3 L1,22 Z M13,19 L11,19 L11,17 L13,17 L13,19 Z M13,15 L11,15 L11,11 L13,11 L13,15 Z" id="Shape" fill="#D76823" fill-rule="nonzero"></path>
-                    </g>
-                    </svg>
-                </div>
-                <div style="padding-top:4px;">
-                    <span class="small">Carlos paid a $0.89 fee per money order.</span>
-                </div>
-            </div>
-
-
             <img src="../assets/carlos/carlos-illustration-2.png" alt="An illustration of two hands, one is gripping cash and the other is holding out a box. ">
-            <h1 class="extra-large">It's now Friday and Carlos needs to pick up $2,500 worth of supplies for a siding job tomorrow. How should Carlos pay for the supplies?</h1>
+            <h1 class="extra-large">It’s now Friday, Carlos needs to pick up $2,500 worth of supplies for a siding job tomorrow. How should Carlos pay for his supplies?</h1>
 
             <div class="actions">
                 <a class="button" href="carlos_3.2.3.html">
@@ -73,28 +51,57 @@
                             </g>
                         </svg>
                     </span>
-                    Cash</a>
-                <a class="button" href="carlos_3.2.4.html">
-                    <span>
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Icon-/-Smartphone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
-                                <path d="M15.5,1 L7.5,1 C6.12,1 5,2.12 5,3.5 L5,20.5 C5,21.88 6.12,23 7.5,23 L15.5,23 C16.88,23 18,21.88 18,20.5 L18,3.5 C18,2.12 16.88,1 15.5,1 Z M11.5,22 C10.67,22 10,21.33 10,20.5 C10,19.67 10.67,19 11.5,19 C12.33,19 13,19.67 13,20.5 C13,21.33 12.33,22 11.5,22 Z M16,18 L7,18 L7,4 L16,4 L16,18 Z" id="Shape" fill="#6F4BD5" fill-rule="nonzero"></path>
-                            </g>
-                        </svg>
-                    </span>
-                    
-                    Home Depot Project Loan</a>
+                    Pay for supplies in cash</a>
             </div>
+
+            <!-- Modal trigger-->
+<div class="actions">
+    <button onclick="document.getElementById('id01').style.display='block'" class="button" style="padding-top: 4px; padding-bottom:2px;">
+        <span>
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Icon-/-Smartphone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
+                    <path d="M15.5,1 L7.5,1 C6.12,1 5,2.12 5,3.5 L5,20.5 C5,21.88 6.12,23 7.5,23 L15.5,23 C16.88,23 18,21.88 18,20.5 L18,3.5 C18,2.12 16.88,1 15.5,1 Z M11.5,22 C10.67,22 10,21.33 10,20.5 C10,19.67 10.67,19 11.5,19 C12.33,19 13,19.67 13,20.5 C13,21.33 12.33,22 11.5,22 Z M16,18 L7,18 L7,4 L16,4 L16,18 Z" id="Shape" fill="#6F4BD5" fill-rule="nonzero"></path>
+                </g>
+            </svg>
+        </span>
+        Use Quadpay app to purchase</button>
+  <!-- Modal -->
+    <div id="id01" class="modal">
+      <div class="modal-content">
+        <svg width="56px" height="56px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>Icon / Error</title>
+            <g id="Icon-/-Error" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <rect id="Container" x="0" y="0" width="24" height="24"></rect>
+                <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z" id="Shape" fill="#D9351D" fill-rule="nonzero"></path>
+            </g>
+        </svg>
+          <p class="h4">Carlos can’t use Quadpay without a debit or credit card that is attached to a bank.</p>
+          <p class="large">Quadpay is an app that helps people split up large payments into 4 installments to pay off over 6 weeks<sup><a href="https://www.quadpay.com/how-it-works/" target="_blank;">3</a></sup>. Services like Quadpay, Afterpay and Klarna are helping make credit more accessible but still require a bank account and sometimes a credit check.</p>
+          <div class="actions">
+            <a class="button" href="carlos_2.2.2.html">Go back</a>
+            <a class="primary-button" href="carlos_3.2.3.html">Pay in cash</a>
+        </div>
+      </div>
+    </div>
+  </div>
         </section>
 
         <!-- Sidebar -->
         <aside class="sidebar">
-            <h3>$3,050.72</h3>
-            <h4><i>$99.28 in fees</i></h4>
-            <img src="../assets/carlos/carlos-face-1.png" alt="illustration of face with decorative background">
-            <h5>Carlos</h5>
-            <p class="medium">Contractor <br /> New York City, NY</p>
+            <p class="h5">PROGRESS TRACKER</p>
+            <ul>
+                <li style="color: rgba(var(--color-purple-500));">
+                    <span class="medium-red">$3,050.50</span><br />
+                    <span class="medium">Carlos paid Marcus and Bill with money orders</span>
+                </li>
+                <li style="color: rgba(var(--color-purple-500));">
+                    <span class="medium-red">$4,902.50</span><br />
+                    <span class="medium">Carlos cashed his check but was charged a 1.95% processing fee ($97.50)</span>
+                </li>
+                <li style="color: rgba(var(--color-purple-500));"><span class="medium">Carlos receives a $5,000 paycheck</span></li>
+            </ul>
+
         </aside>
 
     </div>
