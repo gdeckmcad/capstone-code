@@ -144,11 +144,6 @@ ol li {
   outline: 2px dotted rgba(var(--color-white));
 }
 
-.main-nav object {
-  width: 375px;
-  padding-top: 8px;
-}
-
 .main-nav img {
   width: 375px;
   padding-top: 8px;
@@ -557,6 +552,11 @@ a {
 
   .main-nav ul {
     display: none;
+  }
+
+  .main-nav img {
+    width: 300px;
+    padding-top: 8px;
   }
 
   .welcome {
