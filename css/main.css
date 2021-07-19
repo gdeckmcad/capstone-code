@@ -55,7 +55,7 @@ body {
   outline: 2px dotted rgba(var(--color-purple-500));
 }
 
-.button svg {
+.button svg, .primary-button svg {
   vertical-align: middle;
   margin-bottom: 4px;
   margin-top: 1px;
@@ -332,6 +332,20 @@ a {
   color: rgba(var(--color-purple-500));
 }
 
+.learn-link {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
+
+.learn-link a {
+  color: rgba(var(--color-black));
+  border-bottom: 2px solid rgba(var(--color-purple-500));
+}
+
+.learn-link a:hover {
+  color: rgba(var(--color-purple-500));
+}
+
 /* homepage cards */
 
 .card {
@@ -373,6 +387,7 @@ a {
 }
 
 .scenario img {
+  width: 25%;
   padding-bottom: var(--spacing-two);
 }
 
@@ -492,6 +507,15 @@ a {
 
 }
 
+/* Google charts */
+
+#chart_div {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
+
+
+
 /* Responsive behavior */
 
 @media only screen and (max-width: 1024px) {
@@ -520,6 +544,10 @@ a {
     display: grid;
     grid-template-columns: 100%;
     padding-bottom: var(--spacing-two);
+  }
+
+  #chart_div {
+    width: 325px;
   }
 
 }
@@ -559,6 +587,10 @@ a {
   }
 
   .modal-content{
+    width: 325px;
+  }
+
+  #chart_div {
     width: 325px;
   }
 

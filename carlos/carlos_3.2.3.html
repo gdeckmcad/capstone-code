@@ -5,96 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--Stylesheets-->
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <link type="text/css" rel="stylesheet" href="../css/normalize.css" />
     
     <title>It's Accrual World</title>
+
+    <!-- Google charts JS -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['', 'Leftover cash', 'Fees', 'Credit card debt'],
+          ['1. Bank > Paypal > Credit', 5000, 0, 4350],
+          ['2. Bank > Paypal > Debit', 2465, 35, 1850],
+          ['3. Bank > Check > Credit', 3010, 140, 2500],
+          ['4. Bank > Check > Debit', 475, 175, 0],
+          ['5. Cash > Cash > Cash', 552.50, 97.50, 0],
+          ['6. Cash > Money order > Cash', 550.72, 99.28, 0]
+        ]);
+
+        var options = {
+          chart: {
+            title: '',
+            subtitle: '',
+          },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          hAxis: {format: 'decimal'},
+          height: 300,
+          colors: ['#3A835D', '#D9351D', '#6F4BD5']
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('chart_div'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    
+    </script>
+
 </head>
 
 <body>
-    <!--top navigation on every page-->
-    <header class="page-header">
-        <nav class="main-nav">
-            <div class="nav-container-one">
-                <a href="../index.html"><img src="../assets/logo.png" alt="It's Accrual World logo with small icon of a city"></a>
-            </div>
+   <!--top navigation on every page-->
+   <header class="page-header">
+       <nav class="main-nav">
+           <div class="nav-container-one">
+               <object data="../assets/Logo.svg" type="image/svg+xml"></object>
+           </div>
 
-            <div class="nav-container-two">
-                <ul>
-                    <li><a href="https://www.its-accrual-world.com/" target="_blank">About</a></li>
-                    <li><a href="../references.html">References</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+           <div class="nav-container-two">
+               <ul>
+                   <li><a href="../index.html">Home</a></li>
+                   <li><a href="https://www.its-accrual-world.com/" target="_blank">About</a></li>
+                   <li><a href="../references.html">References</a></li>
+               </ul>
+           </div>
+       </nav>
+   </header>
 
     <div class="character-screens">
 
         <section class="scenario">
-            <div class="success">
-                <div>
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Icon-/-Success" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
-                            <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z" id="Shape" fill="#3A835D" fill-rule="nonzero"></path>
-                        </g>
-                    </svg>
-                </div>
-                <div style="padding-top:4px;">
-                    <span class="small">Supplies are paid for, Carlos is set for his next project!</span>
-                </div>
-            </div>
+            <img src="../assets/carlos/carlos-illustration-1.png" alt="An illustration of a hand holding up a phone with a success message">
+            <h1 class="extra-large">Carlos is all set for the next week! Let’s look at how he did comparatively </h1>
 
+            <div width="250px" id="chart_div"></div>
 
-            <div class="blank">
-                <div>
-                    <svg width="32px" height="32px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Icon-/-Warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
-                            <path d="M1,22 L23,22 L12,3 L1,22 Z M13,19 L11,19 L11,17 L13,17 L13,19 Z M13,15 L11,15 L11,11 L13,11 L13,15 Z" id="Shape" fill="#D76823" fill-rule="nonzero"></path>
-                        </g>
-                        </svg>
-                </div>
-                <div>
-                    <span class="extra-large">Carlos ran into a couple of fees using check-cashing services<sup>1</sup>.</span>
-                </div>
-            </div>
+            <p class="large">Route 2 is the most ideal, with a good balance between debt to income with minimal fees. Unfortunately some folks don’t have easy access to banks and have to use check-cashing services that charge fees<sup><a href="https://www.thebalance.com/what-is-a-check-cashing-service-4796398" target="_blank">4</a></sup>. Those that do have access to banks may also fall victim to debt resequencing<sup>6</sup> and get overwhelmed by fees<sup><a href="https://www.thebalance.com/overdraft-fees-after-opting-out-315333" target="_blank">9</a></sup>. Learn about how to take action to make banking more equitable:</p>
 
-            <div class="blank">
-                <div>
-                    <svg width="32px" height="32px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Icon-/-Info" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
-                            <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,11 L13,11 L13,17 Z M13,9 L11,9 L11,7 L13,7 L13,9 Z" id="Shape" fill="#111EDD" fill-rule="nonzero"></path>
-                        </g>
-                    </svg>
-                </div>
-                <div>
-                    <span class="extra-large">Carlos may be in a banking desert. <a class="resource" href="https://www.aclu.org/news/racial-justice/why-we-need-the-post-office-to-close-the-racial-wealth-gap/" target="blank">Learn about the fight to make banking more accessible with postal banking</a></span>
-                </div>
-            </div>
+            <div class="learn-link h5"><a href="https://www.aclu.org/news/racial-justice/why-we-need-the-post-office-to-close-the-racial-wealth-gap/" target="_blank">The Fight for Postal Banking</a></div>
 
-            <div class="blank">
-                <div>
-                    <svg width="32px" height="32px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Icon-/-Discussion" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
-                            <path d="M15,4 L15,11 L5.17,11 L4.58,11.59 L4,12.17 L4,4 L15,4 M16,2 L3,2 C2.45,2 2,2.45 2,3 L2,17 L6,13 L16,13 C16.55,13 17,12.55 17,12 L17,3 C17,2.45 16.55,2 16,2 Z M21,6 L19,6 L19,15 L6,15 L6,17 C6,17.55 6.45,18 7,18 L18,18 L22,22 L22,7 C22,6.45 21.55,6 21,6 Z" id="Shape" fill="#6F4BD5" fill-rule="nonzero"></path>
-                        </g>
-                    </svg>
-                </div>
-                <div>
-                    <span class="extra-large">Why would someone use check-cashing services<sup><a href="https://www.thebalance.com/what-is-a-check-cashing-service-4796398" target="_blank">4</a></sup>? Are the fees comparable to overdraft fees?</span>
-                </div>
-            </div>
+            <div class="learn-link h5"><a href="https://fedpaymentsimprovement.org/" target="_blank">FedPayments Improvement</a></div>
 
             <div class="actions">
-                <a class="button" href="../index.html">
+                <a class="primary-button" href="../index.html">
                     <span>
                         <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Icon-/-Map" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
-                                <path d="M20.5,3 L20.34,3.03 L15,5.1 L9,3 L3.36,4.9 C3.15,4.97 3,5.15 3,5.38 L3,20.5 C3,20.78 3.22,21 3.5,21 L3.66,20.97 L9,18.9 L15,21 L20.64,19.1 C20.85,19.03 21,18.85 21,18.62 L21,3.5 C21,3.22 20.78,3 20.5,3 Z M10,5.47 L14,6.87 L14,18.53 L10,17.13 L10,5.47 Z M5,6.46 L8,5.45 L8,17.15 L5,18.31 L5,6.46 Z M19,17.54 L16,18.55 L16,6.86 L19,5.7 L19,17.54 Z" id="Shape" fill="#6F4BD5" fill-rule="nonzero"></path>
+                                <path d="M20.5,3 L20.34,3.03 L15,5.1 L9,3 L3.36,4.9 C3.15,4.97 3,5.15 3,5.38 L3,20.5 C3,20.78 3.22,21 3.5,21 L3.66,20.97 L9,18.9 L15,21 L20.64,19.1 C20.85,19.03 21,18.85 21,18.62 L21,3.5 C21,3.22 20.78,3 20.5,3 Z M10,5.47 L14,6.87 L14,18.53 L10,17.13 L10,5.47 Z M5,6.46 L8,5.45 L8,17.15 L5,18.31 L5,6.46 Z M19,17.54 L16,18.55 L16,6.86 L19,5.7 L19,17.54 Z" id="Shape" fill="#ffffff" fill-rule="nonzero"></path>
                             </g>
                         </svg>
                     </span>
@@ -104,11 +99,23 @@
 
         <!-- Sidebar -->
         <aside class="sidebar">
-            <h3>$550.72</h3>
-            <h4><i>$99.28 in fees</i></h4>
-            <img src="../assets/carlos/carlos-face-1.png" alt="illustration of face with decorative background">
-            <h5>Carlos</h5>
-            <p class="medium">Contractor <br /> New York City, NY</p>
+            <p class="h5">PROGRESS TRACKER</p>
+            <ul>
+                <li style="color: rgba(var(--color-purple-500));">
+                    <span class="medium-red">$550.50</span><br />
+                    <span class="medium">Carlos paid for supplies in cash</span>
+                </li>
+                <li style="color: rgba(var(--color-purple-500));">
+                    <span class="medium-red">$3,050.50</span><br />
+                    <span class="medium">Carlos paid Marcus and Bill with money orders</span>
+                </li>
+                <li style="color: rgba(var(--color-purple-500));">
+                    <span class="medium-red">$4,902.50</span><br />
+                    <span class="medium">Carlos cashed his check but was charged a 1.95% processing fee ($97.50)</span>
+                </li>
+                <li style="color: rgba(var(--color-purple-500));"><span class="medium">Carlos receives a $5,000 paycheck</span></li>
+            </ul>
+
         </aside>
 
     </div>
