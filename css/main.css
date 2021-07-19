@@ -356,7 +356,7 @@ a {
 
 .card {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 20% 80%;
   background-color: rgba(var(--color-white));
   border: 1px solid rgba(var(--color-gray-100));
   border-radius: 4px;
@@ -373,8 +373,7 @@ a {
 }
 
 .card .col-1 img {
-  margin-top: var(--spacing-one);
-  width: 150px;
+  width: 125px;
 }
 
 /* Sidebar layout */
@@ -561,7 +560,7 @@ a {
   }
 
   .welcome {
-    width: 75vw;
+    width: 80vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
