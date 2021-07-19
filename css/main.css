@@ -387,7 +387,6 @@ a {
 }
 
 .scenario img {
-  width: 25%;
   padding-bottom: var(--spacing-two);
 }
 
@@ -538,12 +537,6 @@ a {
     grid-template-columns: 65% 35%;
     width: 80vw;
     margin: 0 auto;
-  }
-
-  .inline-images {
-    display: grid;
-    grid-template-columns: 100%;
-    padding-bottom: var(--spacing-two);
   }
 
   #chart_div {
