@@ -567,7 +567,7 @@ a {
   }
 
   .card {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
   }
 
   .card .col-1 img {
