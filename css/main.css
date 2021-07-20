@@ -532,6 +532,11 @@ a {
     margin: 0 auto;
   }
 
+  .main-nav img {
+    width: 325px;
+    padding-top: 8px;
+  }
+
   .card {
     grid-template-columns: 30% 70%;
   }
@@ -553,6 +558,7 @@ a {
 }
 
 @media only screen and (max-width: 640px) {
+  
   .main-nav {
     display: inline-block;
   }
@@ -562,16 +568,18 @@ a {
   }
 
   .main-nav img {
-    width: 300px;
+    width: 275px;
     padding-top: 8px;
   }
 
   .welcome {
-    width: 70vw;
+    width: 80vw;
   }
 
   .card {
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 50% 50%;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .character-screens {
@@ -590,6 +598,15 @@ a {
 
   #chart_div {
     width: 325px;
+  }
+
+  .inline-images {
+    display: block;
+    padding-bottom: var(--spacing-two);
+  }
+
+  .sidebar ul li:before {
+    left: -24px;
   }
 
 }
