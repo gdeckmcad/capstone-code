@@ -443,6 +443,8 @@ a {
   list-style: disc;
   font-size: 2rem;
   line-height: 0.5;
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
 }
 
 .sidebar ul li {
