@@ -182,17 +182,17 @@ section {
 }
 
 .welcome {
-  display: grid;
-  grid-template-columns: 45% 55%;
-  grid-column-gap: var(--spacing-four);
-  width: 80vw;
+  width: 35vw;
   margin: 0 auto;
   padding-top: var(--spacing-three);
   padding-bottom: var(--spacing-four);
 }
 
 .welcome img {
-  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
 }
@@ -521,10 +521,8 @@ a {
 
 @media only screen and (max-width: 975px) {
   .welcome {
-    width: 80vw;
+    width: 60vw;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 100%;
   }
 
   .card {
@@ -563,9 +561,6 @@ a {
 
   .welcome {
     width: 80vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 100%;
   }
 
   .card {
