@@ -496,6 +496,10 @@ a {
   width: 450px;
 }
 
+.modal p {
+  padding-bottom: var(--spacing-half);
+}
+
 /* Accordion */
 
 .accordion-body {
