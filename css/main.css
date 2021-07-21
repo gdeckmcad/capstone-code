@@ -409,7 +409,6 @@ a {
   background-color: rgba(var(--color-orange-100));
   border: 1px solid rgba(var(--color-orange-500));
   padding: var(--spacing-one);
-  margin-top: var(--spacing-one);
 }
 
 .warning:hover {
