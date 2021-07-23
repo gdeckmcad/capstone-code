@@ -129,7 +129,6 @@ ol li {
 
 .page-header {
   background-color: rgba(var(--color-purple-500));
-  padding: var(--spacing-one);
 }
 
 .main-nav {
@@ -153,10 +152,10 @@ ol li {
 }
 
 .main-nav ul li a {
-  font-size: 1.125rem;
-  font-family: 'Bellota Text', cursive;
-  font-variant-ligatures: no-common-ligatures;
-  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: rgba(var(--color-white));
   text-decoration: none;
 }
@@ -170,7 +169,7 @@ ol li {
 }
 
 .main-nav img {
-  width: 375px;
+  width: 405px;
   padding-top: 8px;
 }
 
