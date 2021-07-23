@@ -113,6 +113,7 @@ ol li {
 .main-nav {
   display: grid;
   grid-template-columns: 60% 40%;
+  padding: 32px 40px;
 }
 
 .main-nav a:focus {
@@ -126,7 +127,7 @@ ol li {
 
 .main-nav ul li {
   display: inline-block;
-  padding-right: var(--spacing-two);
+  margin-right: var(--spacing-two);
 }
 
 .main-nav ul li a {
@@ -151,6 +152,9 @@ ol li {
   padding-top: 8px;
 }
 
+.selected {
+  border-bottom: 1px solid rgba(var(--color-white));
+}
 
 /* page transitions */
 @keyframes transitionIn {
