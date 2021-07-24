@@ -114,6 +114,7 @@ button {
   border-radius: 4px;
   padding: var(--spacing-one);
   width: 100%;
+  height: 100%;
 }
 
 .button-card:hover {
@@ -165,6 +166,12 @@ button {
 .two-column {
   display: grid;
   grid-template-columns: 45% 45%;
+  grid-column-gap: var(--spacing-two);
+}
+
+.three-column {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
   grid-column-gap: var(--spacing-two);
 }
 
