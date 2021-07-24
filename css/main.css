@@ -140,7 +140,7 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 250px;
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
 }
