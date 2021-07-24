@@ -108,6 +108,49 @@ button {
   background-color: rgba(var(--color-white));
 }
 
+.button-card {
+  color: rgba(var(--color-purple-500));
+  border: 2px solid rgba(var(--color-purple-500));
+  border-radius: 4px;
+  padding: var(--spacing-one);
+  width: 100%;
+}
+
+.button-card:hover {
+  background-color: rgba(var(--color-purple-100));
+}
+
+/* Layouts */
+
+.references {
+  width: 50vw;
+  margin: 0 auto;
+  padding-top: var(--spacing-three);
+  padding-bottom: var(--spacing-four);
+}
+
+.welcome {
+  width: 40vw;
+  margin: 0 auto;
+  padding-top: var(--spacing-three);
+  padding-bottom: var(--spacing-four);
+}
+
+.welcome img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-top: var(--spacing-two);
+  padding-bottom: var(--spacing-two);
+}
+
+.references ul li {
+  padding-bottom: var(--spacing-half);
+  padding-top: var(--spacing-half);
+  list-style-type: none;
+}
+
 .inline-images {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -119,9 +162,38 @@ button {
   padding-bottom: var(--spacing-one);
 }
 
+.two-column {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-column-gap: var(--spacing-two);
+}
+
 ol li {
   padding-bottom: var(--spacing-half);
   padding-top: var(--spacing-half);
+}
+
+/* Sidebar layout */
+
+.character-screens {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 60vw;
+  margin: 0 auto;
+  padding-top: var(--spacing-three);
+  padding-bottom: var(--spacing-four);
+}
+
+.scenario {
+  padding-right: var(--spacing-four);
+}
+
+.scenario img {
+  padding-bottom: var(--spacing-two);
+}
+
+.actions {
+  padding-top: var(--spacing-two);
 }
 
 
@@ -196,38 +268,6 @@ section {
 
 .modal {
   animation: transitionIn 0.25s;
-}
-
-
-/* homepage and references layout */
-
-.references {
-  width: 50vw;
-  margin: 0 auto;
-  padding-top: var(--spacing-three);
-  padding-bottom: var(--spacing-four);
-}
-
-.welcome {
-  width: 40vw;
-  margin: 0 auto;
-  padding-top: var(--spacing-three);
-  padding-bottom: var(--spacing-four);
-}
-
-.welcome img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
-}
-
-.references ul li {
-  padding-bottom: var(--spacing-half);
-  padding-top: var(--spacing-half);
-  list-style-type: none;
 }
 
 /* Typography */
@@ -371,7 +411,7 @@ a {
 }
 
 .learn-link a:hover {
-  color: rgba(var(--color-purple-500));
+  background-color: rgba(var(--color-purple-100));;
 }
 
 /* homepage cards */
@@ -401,28 +441,19 @@ a {
   padding-bottom: 0px;
 }
 
-/* Sidebar layout */
+/* Accordion */
 
-.character-screens {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  width: 60vw;
-  margin: 0 auto;
-  padding-top: var(--spacing-three);
-  padding-bottom: var(--spacing-four);
+.accordion-body {
+  border: 1px solid rgba(var(--color-orange-500));
+  margin: 0;
+  padding: 0;
 }
 
-.scenario {
-  padding-right: var(--spacing-four);
+.accordion-body .small {
+  margin: 0;
+  padding: 16px;
 }
 
-.scenario img {
-  padding-bottom: var(--spacing-two);
-}
-
-.actions {
-  padding-top: var(--spacing-two);
-}
 
 /* Accordion alerts */
 
@@ -441,24 +472,6 @@ a {
   opacity: 0.8;
 }
 
-/* Button card */
-
-.button-card {
-  display: grid;
-  grid-template-columns: 45% 45%;
-  grid-column-gap: var(--spacing-two);
-}
-
-.column {
-  color: rgba(var(--color-purple-500));
-  border: 2px solid rgba(var(--color-purple-500));
-  border-radius: 4px;
-  padding: var(--spacing-one);
-}
-
-.column:hover {
-  background-color: rgba(var(--color-purple-100));
-}
 
 /* Progress tracker */
 
@@ -524,19 +537,6 @@ a {
   padding-bottom: var(--spacing-half);
 }
 
-/* Accordion */
-
-.accordion-body {
-  border: 1px solid rgba(var(--color-orange-500));
-  margin: 0;
-  padding: 0;
-}
-
-.accordion-body .small {
-  margin: 0;
-  padding: 16px;
-}
-
 /* Google charts */
 
 #chart_div {
@@ -545,10 +545,17 @@ a {
 }
 
 
+/* end screen for Janice */
+.icon-text svg {
+  vertical-align: middle;
+}
+.icon-text {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 
 /* Responsive behavior */
-
-
 
 @media only screen and (max-width: 1024px) {
   .welcome {
