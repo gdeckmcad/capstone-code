@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/jpg" href="../favicon.ico">
+    
+     <!--Stylesheets-->
+     <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="../css/main.css">
+     
+     <title>It's Accrual World</title>
+ </head>
+ 
+ <body>
+    <!--top navigation on every page-->
+    <header class="page-header">
+        <nav class="main-nav">
+            <div class="nav-container-one">
+                <a href="../index.html">
+                <img src="../assets/logo.png" srcset="../assets/Logo.svg">
+                </a>
+            </div>
+
+            <div class="nav-container-two">
+                <ul>
+                    <ul>
+                        <li><a href="https://gdeckmcad.github.io/capstone-page/">About</a></li>
+                        <li><a href="https://www.its-accrual-world.com/">Project blog</a></li>
+                        <li><a href="../references.html">References</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="character-screens">
+
+        <section class="scenario">
+            <img width="150px" src="../assets/janice/janice-key.png" alt="Illustration of a hand pinching a key">
+            <h1 class="extra-large">Janice needs to apply for a low down payment option. How should they try to  finance their mortgage?</h1>
+            <!-- Modal trigger-->
+            <div class="actions">
+                <button onclick="document.getElementById('id01').style.display='block'" class="button" style="padding-top: 8px; padding-bottom:8px;">FHA Loan 0% down payment</button>
+            <!-- Modal -->
+                <div id="id01" class="modal">
+                <div class="modal-content">
+                        <svg width="56px" height="56px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Icon-/-Warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M1,22 L23,22 L12,3 L1,22 Z M13,19 L11,19 L11,17 L13,17 L13,19 Z M13,15 L11,15 L11,11 L13,11 L13,15 Z" id="Shape" fill="#D76823" fill-rule="nonzero"></path>
+                        </g>
+                        </svg>
+                    <p class="h4">An FHA loan may increase your monthly payment.</p>
+                    <p class="medium">An FHA loan requires that you pay two types of mortgage insurance premiums (MIP)—an upfront MIP and an annual MIP (which is charged monthly)<a href="https://www.investopedia.com/terms/f/fhaloan.asp" target="_blank"><sup>24</sup></a>.</p>
+                    <div class="actions">
+                        <a class="button" href="janice_house_route1.html">Go back</a>
+                        <a class="primary-button" href="janice_house_route1_1.1.html">Continue</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <!-- Modal end-->
+
+        <!-- Modal trigger-->
+            <div class="actions">
+                <button onclick="document.getElementById('id02').style.display='block'" class="button" style="padding-top: 8px; padding-bottom:8px;">Fannie Mae Loan 3% down payment</button>
+            <!-- Modal -->
+                <div id="id02" class="modal">
+                <div class="modal-content">
+                    <svg width="56px" height="56px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Icon-/-Error" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <rect id="Container" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z" id="Shape" fill="#D9351D" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                    <p class="h4">Janice has insufficient funds for down payment and closing costs.</p>
+                    <p class="medium">Fannie Mae and Freddie Mac programs will consider some borrowers with no credit score by building a non-traditional credit report—as long as those borrowers meet certain debt-to-income and loan-to-value ratio guidelines in addition to other requirements<a href="https://www.investopedia.com/mortgage/mortgage-guide/down-payment/" target="_blank"><sup>25</sup></a>.</p>
+                    <div class="actions">
+                        <a class="primary-button" href="janice_house_route1.html">Go back</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <!-- Modal end -->
+            
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <p class="h5">PROGRESS TRACKER</p>
+            <ul>
+                <li style="color: rgba(var(--color-purple-500));"> <span class="medium">Janice picked the 4 bedroom house for $225,000</span></li>
+                <li style="color: rgba(var(--color-purple-500));"> <span class="medium">Janice decided to buy</span></li>
+                <li style="color: rgba(var(--color-purple-500));"> <span class="medium">Janice saved $5,000</span></li>
+            </ul>
+
+        </aside>
+
+    </div>
+
+</body>
+
+</html>

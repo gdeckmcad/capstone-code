@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/jpg" href="../favicon.ico">
+    
+     <!--Stylesheets-->
+     <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="../css/main.css">
+     
+     <title>It's Accrual World</title>
+ </head>
+ 
+ <body>
+    <!--top navigation on every page-->
+    <header class="page-header">
+        <nav class="main-nav">
+            <div class="nav-container-one">
+                <a href="../index.html">
+                <img src="../assets/logo.png" srcset="../assets/Logo.svg">
+                </a>
+            </div>
+
+            <div class="nav-container-two">
+                <ul>
+                    <ul>
+                        <li><a href="https://gdeckmcad.github.io/capstone-page/">About</a></li>
+                        <li><a href="https://www.its-accrual-world.com/">Project blog</a></li>
+                        <li><a href="../references.html">References</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="character-screens">
+
+        <section class="scenario">
+            <img width="150px" src="../assets/janice/Janice-phone-graph.png" alt="Illustration of a hand holding a phone displaying a graph">
+            <h1 class="extra-large">Closing costs came to 3% of the home price<a href="https://www.nerdwallet.com/article/mortgages/closing-costs-mortgage-fees-explained" target="_blank"><sup>21</sup></a> or $6,750.</h1>
+            <br />
+            <p class="extra-large">Janice is short $1,750. How should they handle the deficient?</p>
+            <!-- Modal trigger-->
+            <div class="actions">
+                <button onclick="document.getElementById('id01').style.display='block'" class="button" style="padding-top: 8px; padding-bottom:8px;">Ask the seller's to cover the rest</button>
+            <!-- Modal -->
+                <div id="id01" class="modal">
+                <div class="modal-content">
+                    <svg width="56px" height="56px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Icon / Success</title>
+                        <g id="Icon-/-Success" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z" id="Shape" fill="#3A835D" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                    <p class="h4">The seller's agreed to cover the rest of the closing costs.</p>
+                    <div class="actions">
+                        <a class="primary-button" href="janice_house_route1_2.1.html">Continue</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <!-- Modal end-->
+
+        <div class="actions">
+            <a class="button" href="janice_house_route1.html">Re-visit other options</a>
+        </div>    
+            
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <p class="h5">PROGRESS TRACKER</p>
+            <ul>
+                <li style="color: rgba(var(--color-purple-500));"> <span class="medium">Janice financed their mortgage with an FHA Loan and 0% down</span></li>
+                <li style="color: rgba(var(--color-purple-500));"> <span class="medium">Janice picked the 4 bedroom house for $225,000</span></li>
+                <li style="color: rgba(var(--color-purple-500));"> <span class="medium">Janice decided to buy</span></li>
+                <li style="color: rgba(var(--color-purple-500));"> <span class="medium">Janice saved $5,000</span></li>
+            </ul>
+
+        </aside>
+
+    </div>
+
+</body>
+
+</html>
