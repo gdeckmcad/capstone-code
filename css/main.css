@@ -365,6 +365,15 @@ h6, .h6 {
   margin: 0px;
 }
 
+.medium-green {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family:'Roboto', sans-serif;
+  font-weight: 300;
+  color: rgba(var(--color-green-500));
+  margin: 0px;
+}
+
 .small {
   font-size: 0.87rem;
   line-height: 1.4;
@@ -408,6 +417,7 @@ a {
 .learn-link a {
   color: rgba(var(--color-black));
   border-bottom: 2px solid rgba(var(--color-purple-500));
+  line-height: 1.5;
 }
 
 .learn-link a:hover {
