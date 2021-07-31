@@ -657,4 +657,14 @@ a {
     left: -24px;
   }
 
+  .three-column {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: var(--spacing-two);
+  }
+
+.third-card {
+  margin-top: var(--spacing-two);
+}
+
 }
