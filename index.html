@@ -1,14 +1,97 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/purple-mode.css">
-    <meta http-equiv="Refresh" content="5; url='home.html'" />
+
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
+    
+    <!--Stylesheets-->
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
     <title>It's Accrual World</title>
 </head>
 
-<body>  
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="assets/loading-animation.json"  background="#6F4BD5"  speed="1"  style="width: 100%; height: 100%"  loop  autoplay></lottie-player>
+<body>
+
+    <!--top navigation on every page-->
+    <header class="page-header">
+        <nav class="main-nav">
+            <div class="nav-container-one">
+                <a href="index.html">
+                <img src="assets/logo.png" srcset="assets/Logo.svg">
+                </a>
+            </div>
+
+            <div class="nav-container-two">
+                <ul>
+                    <li><a href="https://gdeckmcad.github.io/capstone-page/">About</a></li>
+                    <li><a href="https://www.its-accrual-world.com/">Project blog</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="welcome">
+        <img src="assets/homepage/homepage-illustration.png">
+        <h1 class="h1">Welcome to It’s Accrual World!</h1>
+        <p class="large">The financial landscape is complex with bloated jargon, confusing figures and a traumatic history. It’s Accrual World aims to help players make sense of the financial industry in a choose your own adventure banking game. The game grounds players in character scenarios to build financial health, literacy and resilience as they navigate real-world financial decisions through the characters’ lens.</p>
+
+        <h2 class="h3">What adventure will you choose?</h2>
+        <!-- Carlos card-->
+        <a href="carlos/carlos.html">
+            <div class="card">
+                <div class="col-1">
+                    <img src="assets/homepage/carlos-hand.png" alt="Image of a hand coming up and pinching a credit card">
+                </div>
+
+                <div class="col-2">
+                    <p class="small">
+                        <span class="h6">Carlos / Contractor / New York City</span><br />
+                        Carlos is a Contractor and he just got paid for a recent job. Carlos now needs to pay his workers and get supplies for his next job. Should he cash his recent pay check or deposit in a bank?</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Grace card-->
+        <a href="grace/grace.html">
+            <div class="card">
+                <div class="col-1">
+                    <img src="assets/homepage/grace-hand.png" alt="Image of a hand coming up and showing a graduation cap">
+                </div>
+
+                <div class="col-2">
+                    <p class="small">
+                        <span class="h6">Grace / High School Student / Minneapolis</span><br />
+                        Grace wants to be a UX Designer after High School, she is looking at programs and wants to be smart about time and money. Where should she go after graduation?</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Janice card-->
+        <a href="janice/janice.html">
+            <div class="card">
+                <div class="col-1">
+                    <img src="assets/homepage/janice-hand.png" alt="Image of a hand coming up and showing a key">
+                </div>
+
+                <div class="col-2">
+                    <p class="small">
+                        <span class="h6">Janice / Volunteer Coordinator / Cincinnati</span><br />
+                        Janice has saved up money to move out of their parents house. They want to make sure they are making an investment but can still afford other expenses. Should they rent or buy?</p>
+                </div>
+            </div>
+        </a>
+
+    </section>
+
+
 </body>
+
 </html>
